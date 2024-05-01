@@ -80,3 +80,13 @@ class Grid:
         row, col = self.selected
         if self.cubes[row][col].value == 0:
             self.cubes[row][col].set_temp(0)
+
+    def clear(self):
+        row, col = self.selected
+        if self.cubes[row][col].value == 0:
+            self.cubes[row][col].set_temp(0)
+
+    def click(self):
+        """:param: (x, y) location of mouse click
+            :return: (row, col)
+        """
